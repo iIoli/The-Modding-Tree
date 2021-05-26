@@ -24,5 +24,12 @@ addLayer("f", {
     hotkeys: [
         {key: "f", description: "f: Reset for fruits", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
+    upgrades: {
+        Flowering: {
+            description: "Doubles the production of points",
+            cost: new Decimal(1e-24),
+        },
+        etc
+    }
     layerShown(){return true}
 })
