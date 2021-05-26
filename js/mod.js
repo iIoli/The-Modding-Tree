@@ -1,11 +1,11 @@
 let modInfo = {
 	name: "The TREE Tree",
 	id: "The TREE Tree",
-	author: "nobody",
+	author: "iloli",
 	pointsName: "points",
 	discordName: "",
 	discordLink: "",
-	initialStartPoints: new Decimal (10), // Used for hard resets and new players
+	initialStartPoints: new Decimal (1e-24), // Used for hard resets and new players
 	
 	offlineLimit: 1,  // In hours
 }
@@ -41,7 +41,7 @@ function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
 
-	let gain = new Decimal(1)
+	let gain = new Decimal(1e-25)
 	return gain
 }
 
